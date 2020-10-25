@@ -12,8 +12,8 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/products" component={Products}/>
+            <Route exact path="/" render={() => <Home featuredProducts={[1,2,3]}/>}/>
+            <Route exact path="/products" component={Products} />
             <Route exact path="/checkout" component={Checkout}/>
           </Switch>
       </Layout>
@@ -22,3 +22,6 @@ const App = () => {
 }
 
 export default App;
+
+
+

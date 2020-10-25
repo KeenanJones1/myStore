@@ -9,12 +9,9 @@ function Headings(props) {
   )
  }
 
-console.log(props.featuredProducts)
  return (
-  <div>
-   <div className="row">
+  <div className="row">
     {renderHeadings()}
-    </div>
   </div>
  )
 }

@@ -1,14 +1,26 @@
 import React from 'react'
 import Hero from './Hero'
 import Headings from './Headings/Headings'
-import Featurettes from './Featurettes/Featurettes'
+import Featurette from './Featurettes/Featurette'
 
-const index = () => {
+const index = (props) => {
+  const renderFeaturettes = () => {
+    return props.featuredProducts.map(
+      product => <div>
+        <hr className="featurette-divider"/>
+        <Featurette  product={product}/>
+        </div>
+    )
+   }
+
+
   return (
     <div>
       <Hero />
-      <Headings featuredProducts = {[1,2,3]} />
-      <Featurettes featuredProducts = {[1,2,3]}/>
+      <div className="container marketing">
+        <Headings featuredProducts = {[1,2,3]} />
+        {renderFeaturettes()}
+      </div>
     </div>
   )
 }
