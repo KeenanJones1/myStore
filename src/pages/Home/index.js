@@ -18,7 +18,7 @@ const index = (props) => {
     <div>
       <Hero />
       <div className="container marketing">
-        <Headings featuredProducts = {[1,2,3]} />
+        <Headings featuredProducts = {props.featuredProducts} />
         {renderFeaturettes()}
       </div>
     </div>
