@@ -11,8 +11,7 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-            <Route exact path="/" render={() => <Home featuredProducts={[1,2,3]}/>}/>
-            <Route exact path="/products" render={() => <Products products={[1,2,3,4,5,6,7,8]}/>}/>
+            <Route exact path="/" render={() => <Products products={[1,2,3,4,5,6,7,8,9,10]}/>}/>
             <Route exact path="/checkout" component={Checkout}/>
           </Switch>
       </Layout>
