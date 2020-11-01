@@ -3,7 +3,7 @@
 }
 
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -181,7 +181,7 @@
 .product-grid .title a:hover,.product-grid:hover .title a{color:#ef5777}
 .product-grid .price{color:#333;font-size:17px;font-family:Montserrat,sans-serif;font-weight:700;letter-spacing:.6px;margin-bottom:8px;text-align:center;transition:all .3s}
 .product-grid .price span{color:#999;font-size:13px;font-weight:400;text-decoration:line-through;margin-left:3px;display:inline-block}
-.product-grid .add-to-cart{color:#000;font-size:13px;font-weight:600}
+.product-grid .go-to-products{color:#000;font-size:13px;font-weight:600}
 @media only screen and (max-width:990px){.product-grid{margin-bottom:30px}
 }
 
